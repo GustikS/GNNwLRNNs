@@ -1,0 +1,30 @@
+{10,51} atom_embed(A) :- a_feats(A). [activation=identity]
+atom_embed/1 [activation=identity]
+
+{10,6} bond_embed(A) :- b_feats(A). [activation=identity]
+bond_embed/1 [activation=identity]
+
+bond_embed_l1(B) :- {10,10} bond_embed(B), bond(X,Y,B), {10,10} atom_embed(X), {10,10} atom_embed(Y).
+
+bond_embed_l2(B) :- {10,10} bond_embed_l1(B), bond(X,Y,B), {10,10} l1_embed(X), {10,10} l1_embed(Y).
+
+bond_embed_l3(B) :- {10,10} bond_embed_l2(B), bond(X,Y,B), {10,10} l2_embed(X), {10,10} l2_embed(Y).
+
+bond_embed_l4(B) :- {10,10} bond_embed_l3(B), bond(X,Y,B), {10,10} l3_embed(X), {10,10} l3_embed(Y).
+
+bond_embed_l5(B) :- {10,10} bond_embed_l4(B), bond(X,Y,B), {10,10} l4_embed(X), {10,10} l4_embed(Y).
+
+
+{10,10} l1_embed(X) :- {10,10} atom_embed(X), {10,10} atom_embed(Y), {10,1} bond(X,Y,B), {10,10} bond_embed(B).
+
+{10,10} l2_embed(X) :- {10,10} l1_embed(X), {10,10} l1_embed(Y), {10,1} bond(X,Y,B), {10,10} bond_embed_l1(B).
+
+{10,10} l3_embed(X) :- {10,10} l2_embed(X), {10,10} l2_embed(Y), {10,1} bond(X,Y,B), {10,10} bond_embed_l2(B).
+
+{10,10} l4_embed(X) :- {10,10} l3_embed(X), {10,10} l3_embed(Y), {10,1} bond(X,Y,B), {10,10} bond_embed_l3(B).
+
+{10,10} l5_embed(X) :- {10,10} l4_embed(X), {10,10} l4_embed(Y), {10,1} bond(X,Y,B), {10,10} bond_embed_l4(B).
+
+
+{1,10} predict :- {10,10} l5_embed(A), bond(A,B,X), {10,10} bond_embed_l5(X), {10,10} l5_embed(B), bond(B,C,Y), {10,10} bond_embed_l5(Y), {10,10} l5_embed(C), <-4>.
+predict/0 [activation=sigmoid]
