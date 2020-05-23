@@ -58,7 +58,7 @@ def save_graphs_fold(dataset, i, train, val, test, out_path):
     train_labs = [str(graph.y) for graph in train_graphs]
     save_list(dataset, i, train_labs, "train_labels", out_path)
     val_graphs = graphs_to_pyg([mol.to_graph() for mol in val])
-    save_obj(val_graphs, os.path.join(out_path, dataset, "fold" + str(i), ",val_graphs"))
+    save_obj(val_graphs, os.path.join(out_path, dataset, "fold" + str(i), "val_graphs"))
     val_labs = [str(graph.y) for graph in val_graphs]
     save_list(dataset, i, val_labs, "val_labels", out_path)
     test_graphs = graphs_to_pyg([mol.to_graph() for mol in test])
