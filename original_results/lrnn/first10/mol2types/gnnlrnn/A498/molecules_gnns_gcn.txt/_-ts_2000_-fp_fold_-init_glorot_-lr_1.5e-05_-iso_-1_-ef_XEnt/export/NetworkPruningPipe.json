@@ -1,0 +1,170 @@
+[
+
+{
+  "allNeurons": 1140225,
+  "prunedNeurons": 887740,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 512000000
+    },
+    "totalTimeTaken": "PT0.512S",
+    "totalMinutes": 0.008533333333333334,
+    "allocatedMemory": 3375
+  }
+}
+
+,
+
+{
+  "allNeurons": 1139700,
+  "prunedNeurons": 887228,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 176000000
+    },
+    "totalTimeTaken": "PT0.176S",
+    "totalMinutes": 0.0029333333333333334,
+    "allocatedMemory": 3713
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1133490,
+  "prunedNeurons": 882438,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 176000000
+    },
+    "totalTimeTaken": "PT0.176S",
+    "totalMinutes": 0.0029333333333333334,
+    "allocatedMemory": 4402
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1135191,
+  "prunedNeurons": 883424,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 143000000
+    },
+    "totalTimeTaken": "PT0.143S",
+    "totalMinutes": 0.0023833333333333332,
+    "allocatedMemory": 5319
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1130910,
+  "prunedNeurons": 880304,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 169000000
+    },
+    "totalTimeTaken": "PT0.169S",
+    "totalMinutes": 0.002816666666666667,
+    "allocatedMemory": 7334
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1129614,
+  "prunedNeurons": 879490,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 177000000
+    },
+    "totalTimeTaken": "PT0.177S",
+    "totalMinutes": 0.00295,
+    "allocatedMemory": 9288
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1127889,
+  "prunedNeurons": 878198,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 162000000
+    },
+    "totalTimeTaken": "PT0.162S",
+    "totalMinutes": 0.0027,
+    "allocatedMemory": 7957
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1119213,
+  "prunedNeurons": 871586,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 176000000
+    },
+    "totalTimeTaken": "PT0.176S",
+    "totalMinutes": 0.0029333333333333334,
+    "allocatedMemory": 9882
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1116114,
+  "prunedNeurons": 868878,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 153000000
+    },
+    "totalTimeTaken": "PT0.153S",
+    "totalMinutes": 0.0025499999999999997,
+    "allocatedMemory": 11682
+  }
+}
+
+,
+
+
+{
+  "allNeurons": 1125345,
+  "prunedNeurons": 875928,
+  "timing": {
+    "timeTaken": {
+      "seconds": 0,
+      "nanos": 169000000
+    },
+    "totalTimeTaken": "PT0.169S",
+    "totalMinutes": 0.002816666666666667,
+    "allocatedMemory": 10027
+  }
+}
+
+]
+

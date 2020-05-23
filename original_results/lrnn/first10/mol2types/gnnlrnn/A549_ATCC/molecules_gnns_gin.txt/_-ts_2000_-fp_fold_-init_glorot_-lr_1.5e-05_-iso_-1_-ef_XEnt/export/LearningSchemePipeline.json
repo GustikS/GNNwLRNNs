@@ -1,0 +1,31 @@
+{
+  "pipelineOutput": {
+    "bestThreshold": {
+      "value": 0.5
+    },
+    "bestAccuracy": 0.662560257096947,
+    "AUCroc": 0.7072237513606552,
+    "AUCpr": 0.6845062936541488,
+    "accuracy": 0.6628280664167113,
+    "majorityErr": 0.5091055168719871,
+    "dispersion": 0.15863061512783527,
+    "goodCount": 2475,
+    "zeroCount": 1833,
+    "oneCount": 1901,
+    "evaluatedOnline": true,
+    "aggregationFcn": {},
+    "error": {
+      "value": 0.6321194472569822
+    }
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 73599,
+      "nanos": 555000000
+    },
+    "totalTimeTaken": "PT20H26M39.555S",
+    "totalMinutes": 1226.65925,
+    "allocatedMemory": 17092
+  }
+}
+

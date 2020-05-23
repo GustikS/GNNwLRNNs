@@ -1,0 +1,860 @@
+[
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5233425634933264
+        },
+        "bestAccuracy": 0.6802168021680217,
+        "AUCroc": 0.7286917051568642,
+        "AUCpr": 0.7226205844214404,
+        "accuracy": 0.676490514905149,
+        "majorityErr": 0.532859078590786,
+        "dispersion": 0.1550293449123717,
+        "goodCount": 1997,
+        "zeroCount": 1379,
+        "oneCount": 1573,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6064370346980752
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5233425634933264
+        },
+        "bestAccuracy": 0.6310975609756098,
+        "AUCroc": 0.68937441643324,
+        "AUCpr": 0.691636240034118,
+        "accuracy": 0.6341463414634146,
+        "majorityErr": 0.5335365853658537,
+        "dispersion": 0.13380543336312473,
+        "goodCount": 208,
+        "zeroCount": 153,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6272959169277368
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 275360864355724,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1948,
+      "nanos": 666000000
+    },
+    "totalTimeTaken": "PT32M28.666S",
+    "totalMinutes": 32.47776666666667,
+    "allocatedMemory": 4169
+  },
+  "restart": 1
+}
+
+,
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5104578671994727
+        },
+        "bestAccuracy": 0.7083333333333333,
+        "AUCroc": 0.7577464068003982,
+        "AUCpr": 0.7491601463333435,
+        "accuracy": 0.7052845528455285,
+        "majorityErr": 0.532859078590786,
+        "dispersion": 0.19621567496837988,
+        "goodCount": 2082,
+        "zeroCount": 1379,
+        "oneCount": 1573,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5819386523193852
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5104578671994727
+        },
+        "bestAccuracy": 0.7042682926829268,
+        "AUCroc": 0.7255835667600374,
+        "AUCpr": 0.7191903975347465,
+        "accuracy": 0.6951219512195121,
+        "majorityErr": 0.5335365853658537,
+        "dispersion": 0.17333576021582586,
+        "goodCount": 228,
+        "zeroCount": 153,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6122010681945429
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 37608399627006,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1938,
+      "nanos": 887000000
+    },
+    "totalTimeTaken": "PT32M18.887S",
+    "totalMinutes": 32.31478333333333,
+    "allocatedMemory": 3377
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5501172015264975
+        },
+        "bestAccuracy": 0.7042682926829269,
+        "AUCroc": 0.7601662297093768,
+        "AUCpr": 0.7576343022727285,
+        "accuracy": 0.6998644986449865,
+        "majorityErr": 0.532859078590786,
+        "dispersion": 0.1934861726121695,
+        "goodCount": 2066,
+        "zeroCount": 1379,
+        "oneCount": 1573,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5826807335377795
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5501172015264975
+        },
+        "bestAccuracy": 0.698170731707317,
+        "AUCroc": 0.7338001867413633,
+        "AUCpr": 0.73548213670881,
+        "accuracy": 0.698170731707317,
+        "majorityErr": 0.5335365853658537,
+        "dispersion": 0.17769392724960015,
+        "goodCount": 229,
+        "zeroCount": 153,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6019337121350133
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 161725637661142,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1875,
+      "nanos": 910000000
+    },
+    "totalTimeTaken": "PT31M15.91S",
+    "totalMinutes": 31.26516666666667,
+    "allocatedMemory": 4330
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5007536351659106
+        },
+        "bestAccuracy": 0.6978319783197833,
+        "AUCroc": 0.7469771394006004,
+        "AUCpr": 0.7433406905045636,
+        "accuracy": 0.6964769647696477,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.17841937977544553,
+        "goodCount": 2056,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5921576772204118
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5007536351659106
+        },
+        "bestAccuracy": 0.6798780487804879,
+        "AUCroc": 0.7337441643323996,
+        "AUCpr": 0.7285815358394683,
+        "accuracy": 0.6798780487804879,
+        "majorityErr": 0.5335365853658537,
+        "dispersion": 0.1769935529198896,
+        "goodCount": 223,
+        "zeroCount": 153,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6031141108133664
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 198892493601,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1865,
+      "nanos": 449000000
+    },
+    "totalTimeTaken": "PT31M5.449S",
+    "totalMinutes": 31.09081666666667,
+    "allocatedMemory": 4978
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5295481204981723
+        },
+        "bestAccuracy": 0.6920731707317074,
+        "AUCroc": 0.7488019670147883,
+        "AUCpr": 0.7491598841301474,
+        "accuracy": 0.6873306233062331,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.1803211602712696,
+        "goodCount": 2029,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5895596473302089
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5295481204981723
+        },
+        "bestAccuracy": 0.7195121951219512,
+        "AUCroc": 0.7424649859943977,
+        "AUCpr": 0.729159802294649,
+        "accuracy": 0.7286585365853658,
+        "majorityErr": 0.5335365853658537,
+        "dispersion": 0.18399626774795963,
+        "goodCount": 239,
+        "zeroCount": 153,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6103750078246025
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 114789268387609,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1804,
+      "nanos": 829000000
+    },
+    "totalTimeTaken": "PT30M4.829S",
+    "totalMinutes": 30.080483333333333,
+    "allocatedMemory": 5049
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5072940927696938
+        },
+        "bestAccuracy": 0.7137533875338753,
+        "AUCroc": 0.7637629715828513,
+        "AUCpr": 0.7593537370084448,
+        "accuracy": 0.7100271002710027,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.20097774724998257,
+        "goodCount": 2096,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5777369194863342
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5072940927696938
+        },
+        "bestAccuracy": 0.6990881458966566,
+        "AUCroc": 0.7282745825602968,
+        "AUCpr": 0.7226814488728178,
+        "accuracy": 0.7051671732522796,
+        "majorityErr": 0.5319148936170213,
+        "dispersion": 0.1956070590961746,
+        "goodCount": 232,
+        "zeroCount": 154,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6029519458779259
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 151074684132680,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1803,
+      "nanos": 337000000
+    },
+    "totalTimeTaken": "PT30M3.337S",
+    "totalMinutes": 30.055616666666666,
+    "allocatedMemory": 5294
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5528159891269271
+        },
+        "bestAccuracy": 0.709349593495935,
+        "AUCroc": 0.7646465698957849,
+        "AUCpr": 0.7651054339464559,
+        "accuracy": 0.6995257452574526,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.20525053285913425,
+        "goodCount": 2065,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5760384242422589
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5528159891269271
+        },
+        "bestAccuracy": 0.6808510638297872,
+        "AUCroc": 0.7478664192949906,
+        "AUCpr": 0.7452298282946269,
+        "accuracy": 0.7142857142857143,
+        "majorityErr": 0.5319148936170213,
+        "dispersion": 0.20830121784614164,
+        "goodCount": 235,
+        "zeroCount": 154,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5970287029637006
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 122608672553579,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1834,
+      "nanos": 402000000
+    },
+    "totalTimeTaken": "PT30M34.402S",
+    "totalMinutes": 30.57336666666667,
+    "allocatedMemory": 7051
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5791591110384335
+        },
+        "bestAccuracy": 0.7046070460704608,
+        "AUCroc": 0.7559463653749334,
+        "AUCpr": 0.7537167672746699,
+        "accuracy": 0.6944444444444444,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.18859299300077836,
+        "goodCount": 2050,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.58657272870919
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5791591110384335
+        },
+        "bestAccuracy": 0.6838905775075987,
+        "AUCroc": 0.7233024118738405,
+        "AUCpr": 0.7012440556317346,
+        "accuracy": 0.6869300911854104,
+        "majorityErr": 0.5319148936170213,
+        "dispersion": 0.18891395898636915,
+        "goodCount": 226,
+        "zeroCount": 154,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.617699226307336
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 112241907493752,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1772,
+      "nanos": 636000000
+    },
+    "totalTimeTaken": "PT29M32.636S",
+    "totalMinutes": 29.54393333333333,
+    "allocatedMemory": 10440
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5100036005808022
+        },
+        "bestAccuracy": 0.6880081300813008,
+        "AUCroc": 0.7411326656130193,
+        "AUCpr": 0.7492028409716541,
+        "accuracy": 0.6859756097560976,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.16922996269025659,
+        "goodCount": 2025,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5961605882214008
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5100036005808022
+        },
+        "bestAccuracy": 0.6899696048632219,
+        "AUCroc": 0.7343970315398887,
+        "AUCpr": 0.728946204571217,
+        "accuracy": 0.6747720364741642,
+        "majorityErr": 0.5319148936170213,
+        "dispersion": 0.1831431832793723,
+        "goodCount": 222,
+        "zeroCount": 154,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6066358007446334
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 84297111356948,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1749,
+      "nanos": 770000000
+    },
+    "totalTimeTaken": "PT29M9.77S",
+    "totalMinutes": 29.16283333333333,
+    "allocatedMemory": 12570
+  },
+  "restart": 1
+}
+
+,
+
+
+{
+  "progress": {
+    "bestResults": {
+      "training": {
+        "bestThreshold": {
+          "value": 0.5317644930627612
+        },
+        "bestAccuracy": 0.7123983739837398,
+        "AUCroc": 0.7675023006290536,
+        "AUCpr": 0.7706047962682202,
+        "accuracy": 0.6998644986449865,
+        "majorityErr": 0.5331978319783198,
+        "dispersion": 0.20142044553677751,
+        "goodCount": 2066,
+        "zeroCount": 1378,
+        "oneCount": 1574,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5768048803289341
+        }
+      },
+      "validation": {
+        "bestThreshold": {
+          "value": 0.5317644930627612
+        },
+        "bestAccuracy": 0.6869300911854104,
+        "AUCroc": 0.7516883116883116,
+        "AUCpr": 0.7460042517659643,
+        "accuracy": 0.7082066869300911,
+        "majorityErr": 0.5319148936170213,
+        "dispersion": 0.20814620849956317,
+        "goodCount": 233,
+        "zeroCount": 154,
+        "oneCount": 175,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.5937607675212407
+        }
+      }
+    }
+  },
+  "restartingStrategy": {
+    "maxSteps": 2000
+  },
+  "learnRateDecayStrategy": {
+    "ratio": 0.95,
+    "everyNepocha": 100,
+    "initialLearningRate": {
+      "value": 1.5E-5
+    },
+    "actualLearningRate": {
+      "value": 1.5E-5
+    },
+    "decays": 0
+  },
+  "valueInitializer": {
+    "distribution": {
+      "rg": {
+        "seed": 241021582698841,
+        "nextNextGaussian": 0.0,
+        "haveNextNextGaussian": false
+      },
+      "scale": 2.0
+    }
+  },
+  "resultsRecalculationEpochae": 10,
+  "learningRate": {
+    "value": 1.5E-5
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 1774,
+      "nanos": 272000000
+    },
+    "totalTimeTaken": "PT29M34.272S",
+    "totalMinutes": 29.571199999999997,
+    "allocatedMemory": 8670
+  },
+  "restart": 1
+}
+
+]
+

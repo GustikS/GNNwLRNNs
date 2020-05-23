@@ -1,0 +1,155 @@
+{
+  "pipelineOutput": {
+    "r": {
+      "train": {
+        "mean": {
+          "accuracy": 0.6872604684173172,
+          "majorityErr": 0.5119943222143364,
+          "dispersion": 0.17769132029118545,
+          "goodCount": 0,
+          "zeroCount": 0,
+          "oneCount": 0,
+          "evaluatedOnline": true,
+          "error": {
+            "value": 0.5934946942095887
+          }
+        },
+        "std": {
+          "accuracy": 2.0737744430133578E-4,
+          "majorityErr": 2.014828127605287E-8,
+          "dispersion": 5.390660225707959E-4,
+          "goodCount": 0,
+          "zeroCount": 0,
+          "oneCount": 0,
+          "evaluatedOnline": true,
+          "error": {
+            "value": 0.014865251072435304
+          }
+        }
+      },
+      "val": {
+        "mean": {
+          "accuracy": 0.6831210191082803,
+          "majorityErr": 0.5127388535031848,
+          "dispersion": 0.1774964356718328,
+          "goodCount": 0,
+          "zeroCount": 0,
+          "oneCount": 0,
+          "evaluatedOnline": true,
+          "error": {
+            "value": 0.5894508028832338
+          }
+        },
+        "std": {
+          "accuracy": 3.6360501440220683E-4,
+          "majorityErr": 1.232595164407831E-32,
+          "dispersion": 7.588865548368892E-4,
+          "goodCount": 0,
+          "zeroCount": 0,
+          "oneCount": 0,
+          "evaluatedOnline": true,
+          "error": {
+            "value": 0.02005588743688255
+          }
+        }
+      },
+      "test": {
+        "mean": {
+          "accuracy": 0.6663793103448277,
+          "majorityErr": 0.5120689655172413,
+          "dispersion": 0.14901324931584506,
+          "goodCount": 0,
+          "zeroCount": 0,
+          "oneCount": 0,
+          "evaluatedOnline": true,
+          "error": {
+            "value": 0.6316627746258232
+          }
+        },
+        "std": {
+          "accuracy": 0.0012228332672744085,
+          "majorityErr": 1.3211784912141847E-6,
+          "dispersion": 3.777051502914265E-4,
+          "goodCount": 0,
+          "zeroCount": 0,
+          "oneCount": 0,
+          "evaluatedOnline": true,
+          "error": {
+            "value": 0.032695536691265535
+          }
+        }
+      }
+    },
+    "s": {
+      "training": {
+        "bestResults": {
+          "training": {
+            "bestThreshold": {
+              "value": 0.5
+            },
+            "AUCroc": 0.7471915192253501,
+            "AUCpr": 0.7297680555955689,
+            "accuracy": 0.6872604684173172,
+            "majorityErr": 0.5119943222143364,
+            "dispersion": 0.1776894295213589,
+            "goodCount": 19367,
+            "zeroCount": 13752,
+            "oneCount": 14428,
+            "evaluatedOnline": true,
+            "aggregationFcn": {},
+            "error": {
+              "value": 0.5934946942095883
+            }
+          },
+          "validation": {
+            "bestThreshold": {
+              "value": 0.5
+            },
+            "AUCroc": 0.7482769049648843,
+            "AUCpr": 0.7160906289861654,
+            "accuracy": 0.6831210191082803,
+            "majorityErr": 0.5127388535031847,
+            "dispersion": 0.17749643567183232,
+            "goodCount": 2145,
+            "zeroCount": 1530,
+            "oneCount": 1610,
+            "evaluatedOnline": true,
+            "aggregationFcn": {},
+            "error": {
+              "value": 0.5894508028832354
+            }
+          }
+        }
+      },
+      "testing": {
+        "bestThreshold": {
+          "value": 0.5
+        },
+        "bestAccuracy": 0.6701149425287356,
+        "AUCroc": 0.710800915846067,
+        "AUCpr": 0.6732273151327557,
+        "accuracy": 0.6663793103448276,
+        "majorityErr": 0.5120689655172413,
+        "dispersion": 0.14894734143605715,
+        "goodCount": 2319,
+        "zeroCount": 1698,
+        "oneCount": 1782,
+        "evaluatedOnline": true,
+        "aggregationFcn": {},
+        "error": {
+          "value": 0.6316627746258229
+        }
+      }
+    }
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 18927,
+      "nanos": 31000000
+    },
+    "totalTimeTaken": "PT5H15M27.031S",
+    "totalMinutes": 315.45051666666666,
+    "allocatedMemory": 9192
+  }
+}
+

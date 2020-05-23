@@ -1,0 +1,260 @@
+[
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 40,
+    "weightedAtomNeuronsCreated": 49,
+    "aggNeuronsCreated": 133,
+    "ruleNeuronsCreated": 88,
+    "weightedRuleNeuronsCreated": 110,
+    "factNeuronsCreated": 36
+  },
+  "queryNeuronsCreated": 1118,
+  "groundRulesProcessed": 312088,
+  "networksCreated": 1118,
+  "timing": {
+    "timeTaken": {
+      "seconds": 3,
+      "nanos": 779000000
+    },
+    "totalTimeTaken": "PT3.779S",
+    "totalMinutes": 0.06298333333333334,
+    "allocatedMemory": 2526
+  }
+}
+
+,
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 40,
+    "weightedAtomNeuronsCreated": 49,
+    "aggNeuronsCreated": 133,
+    "ruleNeuronsCreated": 88,
+    "weightedRuleNeuronsCreated": 110,
+    "factNeuronsCreated": 36
+  },
+  "queryNeuronsCreated": 1118,
+  "groundRulesProcessed": 305752,
+  "networksCreated": 1118,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 667000000
+    },
+    "totalTimeTaken": "PT1.667S",
+    "totalMinutes": 0.027783333333333333,
+    "allocatedMemory": 3462
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1118,
+  "groundRulesProcessed": 304718,
+  "networksCreated": 1118,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 370000000
+    },
+    "totalTimeTaken": "PT1.37S",
+    "totalMinutes": 0.022833333333333334,
+    "allocatedMemory": 3577
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 310230,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 618000000
+    },
+    "totalTimeTaken": "PT1.618S",
+    "totalMinutes": 0.02696666666666667,
+    "allocatedMemory": 3971
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 302167,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 511000000
+    },
+    "totalTimeTaken": "PT1.511S",
+    "totalMinutes": 0.025183333333333332,
+    "allocatedMemory": 5512
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 309405,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 552000000
+    },
+    "totalTimeTaken": "PT1.552S",
+    "totalMinutes": 0.025866666666666666,
+    "allocatedMemory": 5588
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 303311,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 323000000
+    },
+    "totalTimeTaken": "PT1.323S",
+    "totalMinutes": 0.02205,
+    "allocatedMemory": 5533
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 302893,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 545000000
+    },
+    "totalTimeTaken": "PT1.545S",
+    "totalMinutes": 0.02575,
+    "allocatedMemory": 6626
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 306600,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 616000000
+    },
+    "totalTimeTaken": "PT1.616S",
+    "totalMinutes": 0.026933333333333333,
+    "allocatedMemory": 8516
+  }
+}
+
+,
+
+
+{
+  "neuronCounts": {
+    "atomNeuronsCreated": 35,
+    "weightedAtomNeuronsCreated": 43,
+    "aggNeuronsCreated": 117,
+    "ruleNeuronsCreated": 77,
+    "weightedRuleNeuronsCreated": 105,
+    "factNeuronsCreated": 35
+  },
+  "queryNeuronsCreated": 1119,
+  "groundRulesProcessed": 305599,
+  "networksCreated": 1119,
+  "timing": {
+    "timeTaken": {
+      "seconds": 1,
+      "nanos": 318000000
+    },
+    "totalTimeTaken": "PT1.318S",
+    "totalMinutes": 0.02196666666666667,
+    "allocatedMemory": 6359
+  }
+}
+
+]
+

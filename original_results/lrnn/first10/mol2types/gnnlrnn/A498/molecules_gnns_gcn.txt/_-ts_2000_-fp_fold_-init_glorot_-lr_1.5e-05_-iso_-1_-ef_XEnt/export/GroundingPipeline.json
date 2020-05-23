@@ -1,0 +1,240 @@
+[
+
+{
+  "herbrandCumSize": 612550,
+  "totalRules": 12528,
+  "totalGroundRules": 222970,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 27,
+      "nanos": 988000000
+    },
+    "totalTimeTaken": "PT27.988S",
+    "totalMinutes": 0.46646666666666664,
+    "allocatedMemory": 3371
+  }
+}
+
+,
+
+{
+  "herbrandCumSize": 612254,
+  "totalRules": 12528,
+  "totalGroundRules": 222889,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 16,
+      "nanos": 419000000
+    },
+    "totalTimeTaken": "PT16.419S",
+    "totalMinutes": 0.27365,
+    "allocatedMemory": 3713
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 608922,
+  "totalRules": 12528,
+  "totalGroundRules": 221677,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 20,
+      "nanos": 494000000
+    },
+    "totalTimeTaken": "PT20.494S",
+    "totalMinutes": 0.3415666666666667,
+    "allocatedMemory": 4381
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 609784,
+  "totalRules": 12528,
+  "totalGroundRules": 222081,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 24,
+      "nanos": 741000000
+    },
+    "totalTimeTaken": "PT24.741S",
+    "totalMinutes": 0.41235,
+    "allocatedMemory": 5319
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 607490,
+  "totalRules": 12528,
+  "totalGroundRules": 221245,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 24,
+      "nanos": 138000000
+    },
+    "totalTimeTaken": "PT24.138S",
+    "totalMinutes": 0.40230000000000005,
+    "allocatedMemory": 7334
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 606802,
+  "totalRules": 12528,
+  "totalGroundRules": 220981,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 15,
+      "nanos": 126000000
+    },
+    "totalTimeTaken": "PT15.126S",
+    "totalMinutes": 0.2521,
+    "allocatedMemory": 9288
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 605886,
+  "totalRules": 12528,
+  "totalGroundRules": 220630,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 18,
+      "nanos": 57000000
+    },
+    "totalTimeTaken": "PT18.057S",
+    "totalMinutes": 0.30095,
+    "allocatedMemory": 7957
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 601234,
+  "totalRules": 12528,
+  "totalGroundRules": 218932,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 28,
+      "nanos": 253000000
+    },
+    "totalTimeTaken": "PT28.253S",
+    "totalMinutes": 0.4708833333333333,
+    "allocatedMemory": 9882
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 599498,
+  "totalRules": 12528,
+  "totalGroundRules": 218437,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 15,
+      "nanos": 802000000
+    },
+    "totalTimeTaken": "PT15.802S",
+    "totalMinutes": 0.26336666666666664,
+    "allocatedMemory": 11682
+  }
+}
+
+,
+
+
+{
+  "herbrandCumSize": 604478,
+  "totalRules": 12528,
+  "totalGroundRules": 220198,
+  "weightFactory": {
+    "index": 0,
+    "genericName": "w",
+    "str2weight": {},
+    "weight2weight": {}
+  },
+  "timing": {
+    "timeTaken": {
+      "seconds": 29,
+      "nanos": 531000000
+    },
+    "totalTimeTaken": "PT29.531S",
+    "totalMinutes": 0.4921833333333333,
+    "allocatedMemory": 10027
+  }
+}
+
+]
+

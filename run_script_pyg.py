@@ -21,9 +21,6 @@ torch.set_default_tensor_type('torch.DoubleTensor')
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-
-# v jave glorot init!
-
 # %%
 class NetGCN(torch.nn.Module):
     def __init__(self, num_features, num_classes, dim=10):
@@ -35,7 +32,6 @@ class NetGCN(torch.nn.Module):
         self.reg_params = self.conv1.parameters()
         self.non_reg_params = self.conv2.parameters()
 
-        # self.fc1 = Linear(dim, num_classes, bias=False)
         self.fc1 = Linear(dim, 1, bias=False)
 
     def forward(self, x, edge_index, batch):
@@ -44,7 +40,6 @@ class NetGCN(torch.nn.Module):
 
         x = global_mean_pool(x, batch)
         x = self.fc1(x)
-        # return F.log_softmax(x, dim=-1) # toto ma na konci matici 2x10 -> zmenit na opravdovou sigmoidu
         return torch.sigmoid(x)
 
 
@@ -71,23 +66,18 @@ class NetGIN(torch.nn.Module):
 
         nn1 = Sequential(Linear(num_features, dim), ReLU(), Linear(dim, dim))
         self.conv1 = GINConv(nn1)
-        # self.bn1 = torch.nn.BatchNorm1d(dim)
 
         nn2 = Sequential(Linear(dim, dim), ReLU(), Linear(dim, dim))
         self.conv2 = GINConv(nn2)
-        # self.bn2 = torch.nn.BatchNorm1d(dim)
 
         nn3 = Sequential(Linear(dim, dim), ReLU(), Linear(dim, dim))
         self.conv3 = GINConv(nn3)
-        # self.bn3 = torch.nn.BatchNorm1d(dim)
 
         nn4 = Sequential(Linear(dim, dim), ReLU(), Linear(dim, dim))
         self.conv4 = GINConv(nn4)
-        # self.bn4 = torch.nn.BatchNorm1d(dim)
 
         nn5 = Sequential(Linear(dim, dim), ReLU(), Linear(dim, dim))
         self.conv5 = GINConv(nn5)
-        # self.bn5 = torch.nn.BatchNorm1d(dim)
 
         self.l1 = Linear(dim, 1, bias=False)
         self.l2 = Linear(dim, 1, bias=False)
@@ -157,7 +147,10 @@ class Results:
             # pred = [p.detach().numpy() for p in pred]
             # lab = [l.detach().numpy() for l in lab]
             for (p, l) in zip(pred, lab):
-                self.loss += loss_fcn(p[0][0], l[0].double())
+                if p.ndim == 1:     # batching changes this
+                    self.loss += loss_fcn(p[0], l.double())
+                else:
+                    self.loss += loss_fcn(p[0][0], l[0].double())
             self.loss /= len(lab)
             self.loss = float(self.loss)
             self.accuracy = self.acc(pred, lab)
@@ -165,8 +158,19 @@ class Results:
     def acc(self, output, labels):
         correct = 0
         for out, lab in zip(output, labels):
-            pred = 1 if out[0][0] > 0.5 else 0
-            if pred == int(lab[0]):
+            if len(out) == 1:
+                out_ = out
+            else:
+                out_ = out[0][0]
+
+            pred = 1 if out_ > 0.5 else 0
+
+            if lab.ndim == 0:
+                lab_ = lab
+            else:
+                lab_ = lab[0]
+
+            if pred == int(lab_):
                 correct += 1
         return correct / len(labels)
 
@@ -328,7 +332,7 @@ def export_fold(content, outpath):
         f.close()
 
 
-def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015):
+def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015, dim=10):
     writer = SummaryWriter(outpath)
     if outpath == None:
         outpath = "./" + writer.logdir
@@ -341,7 +345,7 @@ def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015):
     counter = 0
 
     for train_fold, val_fold, test_fold in folds:
-        model = get_model(model_string)
+        model = get_model(model_string, dim)
         best_train_results, best_val_results, best_test_results, elapsed = learn(model, train_fold, val_fold, test_fold,
                                                                                  writer,
                                                                                  steps, lr)
@@ -360,13 +364,13 @@ def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015):
     return cross, writer
 
 
-def get_model(string):
+def get_model(string, dim):
     if string == "gcn":
-        model = NetGCN(num_node_features, num_classes).to(device)
+        model = NetGCN(num_node_features, num_classes, dim=dim).to(device)
     elif string == "gin":
-        model = NetGIN(num_node_features, num_classes).to(device)
+        model = NetGIN(num_node_features, num_classes, dim=dim).to(device)
     elif string == "gsage":
-        model = NetGraphSage(num_node_features, num_classes).to(device)
+        model = NetGraphSage(num_node_features, num_classes, dim=dim).to(device)
 
     return model
 
@@ -376,7 +380,6 @@ def to_json(obj):
 
 
 if __name__ == '__main__':
-    # sys.path.append("/home/gusta/googledrive/Github/NeuraLogic/Frontend")
     num_classes = 2
 
     parser = argparse.ArgumentParser()
@@ -391,21 +394,23 @@ if __name__ == '__main__':
     parser.add_argument("-batch", nargs='?', help="size of minibatch", type=int)
     parser.add_argument("-dim", nargs='?', help="dimension of hidden layers", type=int)
     parser.add_argument("-filename", nargs='?', help="filename with example data", type=str)
-    parser.add_argument("-limit", nargs='?', help="for compatibility wih lrnns", type=str)  # dummy
+    parser.add_argument("-limit", nargs='?', help="dummy for compatibility wih lrnns", type=str)  # dummy
 
     args = parser.parse_args()
 
     steps = args.ts or 1000
     folds = args.xval or 10
+    dim = args.dim or 10
+    batch = args.batch or 1
 
     print(str(args))
 
     filename = args.filename or "_graphs.pkl"
-    dataset_folds = load_dataset_folds_external(args.sd, suffix=filename)
+    dataset_folds = load_dataset_folds_external(args.sd, suffix=filename, batch=batch)
 
     num_node_features = dataset_folds[0][0].dataset[0].num_node_features
 
-    cross, writer = crossvalidate(args.model.lower(), dataset_folds, args.out, steps)
+    cross, writer = crossvalidate(args.model.lower(), dataset_folds, args.out, steps, dim=dim)
 
     content = json.dumps(cross.__dict__, indent=4)
 

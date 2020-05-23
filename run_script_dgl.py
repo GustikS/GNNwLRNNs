@@ -95,15 +95,10 @@ class NetGIN(torch.nn.Module):
 
     def forward(self, g, h):
         x1 = F.relu(self.conv1(g, h))
-        # x = self.bn1(x)
         x2 = F.relu(self.conv2(g, x1))
-        # x = self.bn2(x)
         x3 = F.relu(self.conv3(g, x2))
-        # x = self.bn3(x)
         x4 = F.relu(self.conv4(g, x3))
-        # x = self.bn4(x)
         x5 = F.relu(self.conv5(g, x4))
-        # x = self.bn5(x)
 
         g.ndata['h1'] = x1
         m1 = dgl.mean_nodes(g, 'h1')
@@ -396,7 +391,6 @@ def to_json(obj):
 
 
 if __name__ == '__main__':
-    # sys.path.append("/home/gusta/googledrive/Github/NeuraLogic/Frontend")
     num_classes = 2
 
     parser = argparse.ArgumentParser()
@@ -411,7 +405,7 @@ if __name__ == '__main__':
     parser.add_argument("-batch", nargs='?', help="size of minibatch", type=int)
     parser.add_argument("-dim", nargs='?', help="dimension of hidden layers", type=int)
     parser.add_argument("-filename", nargs='?', help="filename with example data", type=str)
-    parser.add_argument("-limit", nargs='?', help="for compatibility wih lrnns", type=str)  # dummy
+    parser.add_argument("-limit", nargs='?', help="dummy for compatibility wih lrnns", type=str)  # dummy
 
     args = parser.parse_args()
 
