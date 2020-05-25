@@ -23,7 +23,7 @@ run the script to download and process all (73) the NCI datasets.
 	- the source code of this simple utility can be found at: [Molecule2csv](https://github.com/GustikS/NeuraLogic/blob/master/Resources/src/main/java/cz/cvut/fel/ida/utils/molecules/preprocessing/Molecule2csv.java)
 1. run `python csvs2graphs.py DIR OUTDIR`
 	- this will transform the csv representations into respective graph objects (for PyG and DGL) and textual (datalog) representation (for LRNN), and also split into 10 train-val-test folds
-		- we note that as we use only the mol2 types in this case, and not the full feature vectors, this creates unnecessarily large files/graph with many zeros, as we do not treat this as a special case (with sparse embedding indices instead of dense vectors). This is of course terribly space-inefficient, but has no influence on the main point of the experiments (all the frameworks use the same representation).
+		- we note that as we use only the mol2 types in this case, and not the full feature vectors, this creates unnecessarily large files/graph with many zeros, as we do not treat this as a special case (with sparse embedding indices instead of dense vectors). This is of course terribly space-inefficient, but has no influence on the main point of the experiments (all the frameworks use the same representation). Actually it causes LRNN to consume much more memory than it should due to complex parsing of the bloated text files, so we might fix this in near future.
 
 ##### Run the Experiments
 
@@ -36,7 +36,7 @@ run the script to download and process all (73) the NCI datasets.
 	
 1. run the LRNN framework on the same datasets and models (templates) by calling:
 
-	`java -Xmx4g -jar NeuraLogic.jar -sd DIR/786_0 -t ./templates/gcn.txt -ts 2000 -fp fold -init glorot -lr 1.5e-05 -ef XEnt -out OUTDIR/lrnn/786_0`
+	`java -Xmx5g -jar NeuraLogic.jar -sd DIR/786_0 -t ./templates/gcn.txt -ts 2000 -fp fold -init glorot -lr 1.5e-05 -ef XEnt -out OUTDIR/lrnn/786_0`
 
 1. Change the parameters of the scripts as you like (models, datasets, batch sizes, training steps, learning rates, ...) to further compare the behavior and runtimes of the frameworks, as done in the additional experiments in the paper.
 
