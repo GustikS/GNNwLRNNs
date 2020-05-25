@@ -15,7 +15,7 @@ import numpy as np
 from sklearn.model_selection import StratifiedKFold, train_test_split
 from random import shuffle
 
-from tensorboardX import SummaryWriter
+# from tensorboardX import SummaryWriter
 
 torch.set_default_tensor_type('torch.DoubleTensor')
 
@@ -87,15 +87,11 @@ class NetGIN(torch.nn.Module):
 
     def forward(self, x, edge_index, batch):
         x1 = F.relu(self.conv1(x, edge_index))
-        # x = self.bn1(x)
         x2 = F.relu(self.conv2(x1, edge_index))
-        # x = self.bn2(x)
         x3 = F.relu(self.conv3(x2, edge_index))
-        # x = self.bn3(x)
         x4 = F.relu(self.conv4(x3, edge_index))
-        # x = self.bn4(x)
         x5 = F.relu(self.conv5(x4, edge_index))
-        # x = self.bn5(x)
+
         m1 = global_mean_pool(x1, batch)
         m2 = global_mean_pool(x2, batch)
         m3 = global_mean_pool(x3, batch)
@@ -315,13 +311,13 @@ def learn(model, train_loader, val_loader, test_loader, writer, steps=1000, lr=0
                                                                             test_results.accuracy) + " elapsed: " + str(
             elapsed))
 
-        writer.add_scalar('Loss/train', train_results.loss, epoch)
-        writer.add_scalar('Loss/val', val_results.loss, epoch)
-        writer.add_scalar('Loss/test', test_results.loss, epoch)
-        writer.add_scalar('Accuracy/train', train_results.accuracy, epoch)
-        writer.add_scalar('Accuracy/val', val_results.accuracy, epoch)
-        writer.add_scalar('Accuracy/test', test_results.accuracy, epoch)
-        writer.flush()
+        # writer.add_scalar('Loss/train', train_results.loss, epoch)
+        # writer.add_scalar('Loss/val', val_results.loss, epoch)
+        # writer.add_scalar('Loss/test', test_results.loss, epoch)
+        # writer.add_scalar('Accuracy/train', train_results.accuracy, epoch)
+        # writer.add_scalar('Accuracy/val', val_results.accuracy, epoch)
+        # writer.add_scalar('Accuracy/test', test_results.accuracy, epoch)
+        # writer.flush()
 
     return best_train_results, best_val_results, best_test_results, cumtime / steps
 
@@ -333,9 +329,9 @@ def export_fold(content, outpath):
 
 
 def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015, dim=10):
-    writer = SummaryWriter(outpath)
+    # writer = SummaryWriter(outpath)
     if outpath == None:
-        outpath = "./" + writer.logdir
+        outpath = "./out" # + writer.logdir
 
     train_results = []
     val_results = []
@@ -347,7 +343,7 @@ def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015, dim=10)
     for train_fold, val_fold, test_fold in folds:
         model = get_model(model_string, dim)
         best_train_results, best_val_results, best_test_results, elapsed = learn(model, train_fold, val_fold, test_fold,
-                                                                                 writer,
+                                                                                 None,
                                                                                  steps, lr)
         train_results.append(best_train_results)
         val_results.append(best_val_results)
@@ -361,7 +357,7 @@ def crossvalidate(model_string, folds, outpath, steps=1000, lr=0.000015, dim=10)
         counter += 1
 
     cross = Crossval(train_results, val_results, test_results, times)
-    return cross, writer
+    return cross
 
 
 def get_model(string, dim):
@@ -410,11 +406,11 @@ if __name__ == '__main__':
 
     num_node_features = dataset_folds[0][0].dataset[0].num_node_features
 
-    cross, writer = crossvalidate(args.model.lower(), dataset_folds, args.out, steps, dim=dim)
+    cross = crossvalidate(args.model.lower(), dataset_folds, args.out, steps, dim=dim)
 
     content = json.dumps(cross.__dict__, indent=4)
 
-    outp = args.out or "./" + writer.logdir
+    outp = args.out # or "./" + writer.logdir
     with open(outp + "/crossval.json", "w") as f:
         f.writelines(content)
         f.close()

@@ -1,9 +1,10 @@
 ###### Prerequisites
 
 For the GNN frameworks, please follow the instructions at their respective pages, i.e. [PyG](https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html) and [DGL](https://www.dgl.ai/pages/start.html). They are both very nice and user friendly python frameworks, so it should go smoothly. 
+For reference, we used PyG 1.4.3 and DGL 0.4.3 (actual versions as of March 2020).
 Additionally, you will also need some basic python stuff like Pandas and Matplotlib to analyse the results, but you probably already have those anyway.
 
-For the LRNN framework, all you need is Java >=1.8. The whole framework is the small `NeuraLogic.jar` included in this repo (with source at [LRNN](https://github.com/GustikS/NeuraLogic))
+For the LRNN framework, all you need is Java >= 1.8. The whole framework is the small `NeuraLogic.jar` included in this repo (with source at [LRNN](https://github.com/GustikS/NeuraLogic))
 
 ##### Download & Create the Datasets
 
