@@ -13,7 +13,7 @@ _This repository contains materials to reproduce the results from the paper **Be
 1. For the LRNN framework, all you need is Java ≥ 1.8. 
     - The whole learning engine is the small `NeuraLogic.jar` included directly in this repo. For its source see a separate [NeuraLogic](https://github.com/GustikS/NeuraLogic) repository.
 
-#### Download & Create the Datasets
+### Download & Create the Datasets
 
 run a [script](https://github.com/GustikS/GNNwLRNNs/blob/master/data/create_datasets.sh) to download and process all (73) the NCI datasets. 
 
@@ -57,7 +57,7 @@ You can analyze our and your new results by own means in the respective JSON fil
 
 `./analyse_results.py`
 
-Please let us know if you find any bugs or anything interesting!
+----
 
-
-You can find the Lifted Relational Neural Networks framework itself being developed at [Neuralogic](https://github.com/GustikS/NeuraLogic) repository.
+You can find the Lifted Relational Neural Networks framework itself being developed at the [Neuralogic](https://github.com/GustikS/NeuraLogic) repository.
+Please let me know (_souregus@gmail.com_) if you find any bugs or anything interesting!
