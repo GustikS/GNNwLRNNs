@@ -1,6 +1,6 @@
 # Beyond GNNs with LRNNs
 
-_This repository contains materials to reproduce the results from the paper **Beyond Graph Neural Networks with Lifted Relational Neural Networks**_.
+This repository contains materials to reproduce the results from [Beyond Graph Neural Networks with Lifted Relational Neural Networks](https://link.springer.com/article/10.1007/s10994-021-06017-3).
 
 #### Prerequisites
 
